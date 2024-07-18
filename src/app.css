@@ -5,9 +5,11 @@ blockquote {
 }
 
 h1{
-    font-size: large;
+    /* font-size: 200%; */
     margin-top: 15%;
-    margin-left: 5%;
+    margin-left: 30%;
+    /* font-weight: 1000; */
+
 }
 
 .cards {
@@ -35,6 +37,7 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-radius: 2%;
 }
 
 .card-content {
@@ -120,10 +123,29 @@ a:hover {
     .card {
         flex: 1 1 calc(50% - 2em);
     }
+
+    .cards{
+        display: block;
+        margin: 5%;
+    }
+
+    p{
+        font-size: medium;
+
+    }
 }
 
 @media (max-width: 480px) {
     .card {
         flex: 1 1 100%; 
+    }
+
+    p{
+        font-size: small;
+    }
+
+    .cards{
+        display: block;
+        margin: 5%;
     }
 }

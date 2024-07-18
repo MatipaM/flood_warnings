@@ -9,6 +9,7 @@
     let inputValue="";
 
     let h1 = document.createElement('h1')
+    h1.classList.add("title")
     h1.textContent = "Today's Flood Warnings"
     content.appendChild(h1);
    
@@ -18,7 +19,7 @@
     let filteredItems = []
     let results;
 
-    let cards = document.createElement('div')
+    let cards = document.createElement('article')
     cards.id="card"
     cards.classList.add("cards")
 
@@ -72,11 +73,12 @@
                     continue
                 }
                 else if(key=="floodArea"){
-                    result_text=""
-                    result_text+=key+ ": "
-                    for (const [key, val] of Object.entries(value)) {
-                        result_text += key+":"+val
-                    }
+                    continue
+                    // result_text=""
+                    // result_text+=key+ ": "
+                    // for (const [key, val] of Object.entries(value)) {
+                    //     result_text += key+":"+val
+                    // }
                 }
                 else{
                     result_text = key + ":" + value
