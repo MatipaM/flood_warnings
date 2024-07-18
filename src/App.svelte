@@ -1,6 +1,4 @@
 <script>
-    import Button from './Button.svelte'
-    // import './app.css'
     import Link from './Link.svelte'
     import Input from './Input.svelte'
 
@@ -58,6 +56,7 @@
 
 
     function display(){
+        cards.textContent = ""
         for(let idx = 0; idx< results['items'].length; idx++){
 
             let article = document.createElement('article')
@@ -104,7 +103,7 @@
     }
 
     function filterMenu(pages){
-
+        cards.textContent = ""
         for(let idx = 0; idx< results['items'].length; idx++){
 
             let article = document.createElement('article')
